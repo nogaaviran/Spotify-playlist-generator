@@ -1,0 +1,5 @@
+streamlit
+spotipy
+httpx
+python-dotenv
+pydantic
