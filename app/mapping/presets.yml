@@ -1,42 +1,40 @@
-# Stores preset slider values
+# Preset definitions for UI moods
+# Keys are UI-facing labels (can include emojis)
 
-chill:
+😌 Chill:
   energy: 0.3
   valence: 0.6
   danceability: 0.4
-  tempo_min: 80
+  acousticness: 0.6
+  tempo_min: 75
   tempo_max: 110
-  suggested_genres:
-    - indie
-    - jazz
 
-party:
+🕺 Party:
   energy: 0.85
-  valence: 0.7
+  valence: 0.75
   danceability: 0.9
+  acousticness: 0.1
   tempo_min: 120
   tempo_max: 150
 
-focus:
+🎧 Focus:
   energy: 0.4
   valence: 0.5
   danceability: 0.2
+  instrumentalness: 0.6
   tempo_min: 90
   tempo_max: 120
 
-late_night:
+🌙 Late night:
   energy: 0.3
   valence: 0.4
-  danceability: 0.2
+  danceability: 0.25
   acousticness: 0.7
   instrumentalness: 0.4
   tempo_min: 70
   tempo_max: 100
-  suggested_genres:
-    - indie
-    - jazz
 
-heartbreak:
+💔 Heartbreak:
   energy: 0.25
   valence: 0.2
   danceability: 0.15
@@ -47,3 +45,22 @@ heartbreak:
   suggested_genres:
     - pop
     - indie
+
+☀️ Morning boost:
+  energy: 0.6
+  valence: 0.7
+  danceability: 0.55
+  acousticness: 0.3
+  tempo_min: 95
+  tempo_max: 130
+
+🖤 Sad but hot:
+  energy: 0.5
+  valence: 0.3
+  danceability: 0.6
+  acousticness: 0.4
+  tempo_min: 90
+  tempo_max: 120
+  suggested_genres:
+    - alt
+    - rnb

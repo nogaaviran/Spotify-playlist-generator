@@ -10,7 +10,7 @@ def load_genres():
 
 def render_genre_seeds():
     st.subheader("🎵 Musical anchors")
-    st.caption("Optional; pick a few genres to sparkle the vibe")
+    st.caption("Pick up to 5 genres (or leave empty for a surprise 👀)")
 
 
 

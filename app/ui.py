@@ -27,17 +27,17 @@ def render_core_controls():
     )
 
     c["acousticness"] = st.slider(
-        "🎸 Acoustic",
+        "🌿⚡ Organic ↔ Electronic",
         0.0, 1.0, c["acousticness"], 0.01
     )
 
     c["instrumentalness"] = st.slider(
-        "🎻 Instrumental",
+        "🎤🎸 Vocals ↔ Instrumental",
         0.0, 1.0, c["instrumentalness"], 0.01
     )
 
     c["speechiness"] = st.slider(
-        "🗣️ Vocal presence",
+        "🗣️ Background ↔ Sing-along",
         0.0, 1.0, c["speechiness"], 0.01
     )
 

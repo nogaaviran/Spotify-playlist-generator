@@ -1,5 +1,5 @@
 import streamlit as st
-from state import init_state
+from ui_state import init_state
 from ui import render_core_controls, render_presets
 from payload import build_payload
 from seeds import render_genre_seeds
@@ -7,7 +7,7 @@ from seeds import render_genre_seeds
 st.set_page_config(page_title="Playlist by Feel")
 
 st.title("🎛️ Playlist by Feel")
-st.write("Tune the knobs to shape your playlist. You can also use the presets. It's not like we care.")
+st.write("Tune the knobs to shape your playlist. You can also use the presets if you're SO uninspired...")
 st.markdown("---")
 
 init_state()
