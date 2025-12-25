@@ -3,3 +3,4 @@ spotipy
 httpx
 python-dotenv
 pydantic
+pyyaml

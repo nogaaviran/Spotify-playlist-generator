@@ -1,1 +1,22 @@
 # Stores preset slider values
+
+chill:
+  energy: 0.3
+  valence: 0.6
+  danceability: 0.4
+  tempo_min: 80
+  tempo_max: 110
+
+party:
+  energy: 0.85
+  valence: 0.7
+  danceability: 0.9
+  tempo_min: 120
+  tempo_max: 150
+
+focus:
+  energy: 0.4
+  valence: 0.5
+  danceability: 0.2
+  tempo_min: 90
+  tempo_max: 120
