@@ -6,6 +6,9 @@ chill:
   danceability: 0.4
   tempo_min: 80
   tempo_max: 110
+  suggested_genres:
+    - indie
+    - jazz
 
 party:
   energy: 0.85
@@ -20,3 +23,27 @@ focus:
   danceability: 0.2
   tempo_min: 90
   tempo_max: 120
+
+late_night:
+  energy: 0.3
+  valence: 0.4
+  danceability: 0.2
+  acousticness: 0.7
+  instrumentalness: 0.4
+  tempo_min: 70
+  tempo_max: 100
+  suggested_genres:
+    - indie
+    - jazz
+
+heartbreak:
+  energy: 0.25
+  valence: 0.2
+  danceability: 0.15
+  acousticness: 0.6
+  instrumentalness: 0.1
+  tempo_min: 60
+  tempo_max: 90
+  suggested_genres:
+    - pop
+    - indie

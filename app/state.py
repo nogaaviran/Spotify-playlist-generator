@@ -7,6 +7,10 @@ def init_state():
             "energy": 0.5,
             "valence": 0.5,
             "danceability": 0.5,
-            "tempo_min": 90,
-            "tempo_max": 140,
+            "tempo_min": 50,
+            "tempo_max": 100,
+            "acousticness": 0.5,
+            "instrumentalness": 0.3,
+            "speechiness": 0.3,
+
         }
