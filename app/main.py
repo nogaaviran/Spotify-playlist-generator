@@ -10,6 +10,9 @@ st.title("🎛️ Playlist by Feel")
 st.write("Tune the knobs to shape your playlist. You can also use the presets if you're SO uninspired...")
 st.markdown("---")
 
+if "active_preset" not in st.session_state:
+    st.session_state["active_preset"] = None
+
 init_state()
 
 render_presets()

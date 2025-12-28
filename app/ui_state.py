@@ -12,5 +12,8 @@ def init_state():
             "acousticness": 0.5,
             "instrumentalness": 0.3,
             "speechiness": 0.3,
-
         }
+
+    if "active_preset" not in st.session_state:
+        st.session_state["active_preset"] = None
+

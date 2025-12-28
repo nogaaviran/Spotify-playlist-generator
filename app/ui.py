@@ -1,6 +1,20 @@
 import streamlit as st
 from presets import load_presets
 
+st.markdown("""
+<style>
+div[data-testid="stButton"] button {
+    white-space: nowrap;
+    height: 56px;
+    font-size: 16px;
+    margin: 4px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
+
+
 def render_core_controls():
     st.subheader("🎛️ Core feel")
     st.caption("How should this playlist ✨*feel*?✨")
@@ -41,16 +55,24 @@ def render_core_controls():
         0.0, 1.0, c["speechiness"], 0.01
     )
 
-
 def render_presets():
     st.subheader("🎚️ Presets")
-    st.caption("Quick moods to get you started - tweak anything after")
-
+    st.caption("(you can tweak anything after)")
 
     presets = load_presets()
-    cols = st.columns(len(presets))
+    cols = st.columns(4)
 
-    for col, (name, values) in zip(cols, presets.items()):
-        if col.button(name.capitalize()):
-            st.session_state["controls"].update(values)
+    for i, (name, values) in enumerate(presets.items()):
+        col = cols[i % 4]
+
+        if col.button(name.replace("_", " ").title()):
+            # Update controls
+            for key, value in values.items():
+                if key != "suggested_genres":
+                    st.session_state["controls"][key] = value
+
+            # Update genres
+            if "suggested_genres" in values:
+                st.session_state["seeds"]["genres"] = values["suggested_genres"]
+
 
